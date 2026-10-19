@@ -1,0 +1,95 @@
+.grid {
+  display: grid;
+  gap: 40px;
+}
+
+.group {
+  display: grid;
+  gap: 14px;
+  align-content: start;
+}
+
+.groupTitle {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--ink);
+}
+
+.group ul {
+  display: grid;
+  list-style: none;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  padding: 14px 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.item[data-kind="award"] {
+  grid-template-columns: 22px minmax(0, 1fr);
+  column-gap: 10px;
+}
+
+.diamond {
+  width: 11px;
+  height: 11px;
+  margin: 8px 0 0 4px;
+  background: var(--result);
+  border: 1.5px solid var(--ink);
+  transform: rotate(45deg);
+}
+
+.content {
+  display: grid;
+  gap: 3px;
+}
+
+.date {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: var(--muted);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+.item:not([data-kind="award"]) .title {
+  font-family: var(--font-body);
+  font-size: 1.02rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.org {
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+.note {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--ink-2);
+}
+
+.note a {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+}
+
+@media (min-width: 980px) {
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 40px;
+  }
+}

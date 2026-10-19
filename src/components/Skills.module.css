@@ -1,0 +1,102 @@
+.groups {
+  display: grid;
+  gap: 36px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.caption {
+  caption-side: top;
+  text-align: left;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--ink);
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+
+.table th,
+.table td {
+  padding: 11px 0;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: baseline;
+  text-align: left;
+}
+
+.table th {
+  width: 46%;
+  padding-right: 24px;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.where {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  list-style: none;
+}
+
+.where a,
+.where span {
+  display: inline-block;
+  padding: 2px 8px;
+  border: 1px solid var(--rule-strong);
+  border-radius: var(--radius);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  line-height: 1.55;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.where a:hover {
+  border-color: var(--link);
+}
+
+.where span {
+  border-style: dashed;
+  color: var(--muted);
+}
+
+.extra {
+  display: grid;
+  gap: 10px;
+  margin: 32px 0 0;
+}
+
+.extra div {
+  display: grid;
+  grid-template-columns: 7rem minmax(0, 1fr);
+  gap: 16px;
+}
+
+.extra dt {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding-top: 3px;
+}
+
+.extra dd {
+  margin: 0;
+  font-size: 1rem;
+}
+
+@media (min-width: 980px) {
+  .groups {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 56px;
+    row-gap: 44px;
+  }
+}

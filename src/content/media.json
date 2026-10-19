@@ -1,0 +1,58 @@
+{
+  "tcotz/planner.webp": {
+    "width": 1439,
+    "height": 440
+  },
+  "tcotz/validation.webp": {
+    "width": 1441,
+    "height": 700
+  },
+  "sabanci/routes.webp": {
+    "width": 814,
+    "height": 830
+  },
+  "esik/home.webp": {
+    "width": 720,
+    "height": 1600
+  },
+  "esik/overlay.webp": {
+    "width": 720,
+    "height": 1600
+  },
+  "esik/suggestion.webp": {
+    "width": 720,
+    "height": 1600
+  },
+  "esik/report.webp": {
+    "width": 720,
+    "height": 1600
+  },
+  "nudgewell/by-hour.webp": {
+    "width": 1323,
+    "height": 543
+  },
+  "nudgewell/said-vs-did.webp": {
+    "width": 1323,
+    "height": 563
+  },
+  "ratemygig/home.webp": {
+    "width": 1440,
+    "height": 900
+  },
+  "ratemygig/event.webp": {
+    "width": 1440,
+    "height": 520
+  },
+  "studies/coldchain-routes.webp": {
+    "width": 929,
+    "height": 917
+  },
+  "studies/ubereats-map.webp": {
+    "width": 1100,
+    "height": 786
+  },
+  "studies/sac-learning-curve.webp": {
+    "width": 1400,
+    "height": 900
+  }
+}

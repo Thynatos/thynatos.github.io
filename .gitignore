@@ -1,0 +1,8 @@
+node_modules/
+.next/
+out/
+qa/
+media-src/
+.claude/
+*.tsbuildinfo
+next-env.d.ts

@@ -1,0 +1,82 @@
+.chart {
+  margin: 0;
+  display: grid;
+  gap: 12px;
+  padding: 16px 18px 14px;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  background: var(--panel);
+}
+
+.caption {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: var(--ink-2);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.table th,
+.table td {
+  padding: 6px 4px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.table th[scope="row"] {
+  width: 30%;
+  text-align: left;
+  color: var(--muted);
+  font-size: 0.68rem;
+  line-height: 1.3;
+}
+
+.table thead th {
+  color: var(--ink-2);
+  border-bottom: 1px solid var(--rule-strong);
+}
+
+.bars td {
+  height: 120px;
+  vertical-align: bottom;
+  border-bottom: 1px solid var(--ink);
+}
+
+.bar {
+  position: relative;
+  display: block;
+  width: 58%;
+  margin-inline: auto;
+  background: var(--industry);
+  border-radius: 2px 2px 0 0;
+}
+
+.bar[data-over] {
+  background: repeating-linear-gradient(135deg, var(--industry) 0 5px, color-mix(in srgb, var(--industry) 55%, white) 5px 8px);
+}
+
+.value {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  right: 0;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.coverage td {
+  color: var(--ink-2);
+}
+
+.coverage td[data-full] {
+  color: var(--ink);
+  font-weight: 600;
+}

@@ -1,0 +1,68 @@
+.ledger {
+  display: grid;
+  gap: 18px;
+}
+
+.group {
+  display: grid;
+  gap: 4px;
+}
+
+.basis {
+  font-size: 0.92rem;
+  font-style: italic;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+.group dl {
+  margin: 0;
+  border-top: 1px solid var(--ink);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 16px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.row dt {
+  font-size: 0.98rem;
+  line-height: 1.35;
+}
+
+.note {
+  display: block;
+  margin-top: 3px;
+  font-size: 0.86rem;
+  color: var(--muted);
+}
+
+.row dd {
+  margin: 0;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.before {
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+
+.arrow {
+  font-size: 0.9rem;
+  color: var(--lane, var(--industry));
+}
+
+.after {
+  font-size: 1.08rem;
+  font-weight: 600;
+  color: var(--ink);
+}
